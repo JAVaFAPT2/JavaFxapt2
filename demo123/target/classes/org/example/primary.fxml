@@ -6,6 +6,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -40,10 +41,17 @@
             </Text>
             <Ellipse fill="#996b1c" layoutX="171.0" layoutY="14.0" opacity="0.29" radiusX="26.0" radiusY="28.0" stroke="WHITE" strokeType="INSIDE" />
             <Ellipse fill="#996b1c" layoutX="105.0" layoutY="91.0" opacity="0.16" radiusX="14.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" />
-            <Ellipse fill="#996b1c" layoutX="100.0" layoutY="201.0" opacity="0.11" radiusX="55.0" radiusY="59.0" stroke="WHITE" strokeType="INSIDE" />
+            <Ellipse fill="#996b1c" layoutX="100.0" layoutY="201.0" opacity="0.11" radiusX="55.0" radiusY="59.0" stroke="WHITE" strokeType="INSIDE">
+               <effect>
+                  <GaussianBlur radius="4.7" />
+               </effect></Ellipse>
             <Ellipse fill="#996b1c" layoutX="172.0" layoutY="268.0" opacity="0.63" radiusX="14.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" />
             <Ellipse fill="#996b1c" layoutX="-8.0" layoutY="306.0" opacity="0.06" radiusX="47.0" radiusY="50.0" stroke="WHITE" strokeType="INSIDE" />
-            <QuadCurve controlX="62.80003356933594" controlY="-95.4000244140625" endX="50.0" fill="#945a25" layoutX="158.0" layoutY="402.0" startX="-50.0" stroke="WHITE" strokeType="INSIDE" />
+            <QuadCurve controlX="62.80003356933594" controlY="-95.4000244140625" endX="50.0" fill="#945a25" layoutX="158.0" layoutY="402.0" startX="-50.0" stroke="WHITE" strokeType="INSIDE">
+               <effect>
+                  <GaussianBlur radius="1.76" />
+               </effect>
+            </QuadCurve>
          </children>
          <effect>
             <DropShadow blurType="TWO_PASS_BOX" radius="14.6775" width="39.71">
