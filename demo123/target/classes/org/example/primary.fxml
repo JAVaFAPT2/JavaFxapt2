@@ -45,7 +45,7 @@
                </effect></Ellipse>
             <Ellipse fill="#996b1c" layoutX="172.0" layoutY="268.0" opacity="0.63" radiusX="14.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" />
             <Ellipse fill="#996b1c" layoutX="-8.0" layoutY="306.0" opacity="0.06" radiusX="47.0" radiusY="50.0" stroke="WHITE" strokeType="INSIDE" />
-            <QuadCurve controlX="62.80003356933594" controlY="-95.4000244140625" endX="50.0" fill="#945a25" layoutX="158.0" layoutY="402.0" startX="-50.0" stroke="WHITE" strokeType="INSIDE">
+            <QuadCurve controlX="62.80003356933594" controlY="-95.4000244140625" endX="50.0" fill="#945a25" layoutX="9.0" layoutY="401.0" startX="-50.0" stroke="WHITE" strokeType="INSIDE">
                <effect>
                   <GaussianBlur radius="1.76" />
                </effect>
@@ -55,7 +55,7 @@
                   <Image url="@../../image/coffe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="181.0" fitWidth="195.0" layoutX="10.0" layoutY="243.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="181.0" fitWidth="195.0" layoutX="39.0" layoutY="230.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.42" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../image/coffe.png" />
                </image>
