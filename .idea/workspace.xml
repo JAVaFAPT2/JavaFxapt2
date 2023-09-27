@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a1da849-a084-4966-99b9-19c9e796155f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/JavaFxapt2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/JDBCDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/common/ICommon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/config/IDBConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/dao/JDBCConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/entity/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/model/StudentModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/config/IDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/account.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/accountmodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/accountmodel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Vyq48RGPNcaee8qSSYT3zOiit0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dang",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/dangq/JavaFxapt2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dangq\JavaTest1\demo123\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JavaFxapt2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JavaFxapt2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a1da849-a084-4966-99b9-19c9e796155f" name="Changes" comment="" />
+      <created>1695818473961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695818473961</updated>
+      <workItem from="1695818475010" duration="3360000" />
+      <workItem from="1695822001968" duration="1959000" />
+      <workItem from="1695824867273" duration="251000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
