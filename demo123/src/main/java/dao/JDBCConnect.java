@@ -5,9 +5,9 @@ import config.IDBConfig;
 import java.sql.*;
 
 public class JDBCConnect {
-    private Connection connection = null;
-    private PreparedStatement preparedStatement = null;
-    private ResultSet rs = null;
+    static Connection conn = null;
+    static PreparedStatement statement = null;
+    static ResultSet rs = null;
     public static Connection getJDBCConnection() {
         Connection con = null;
         String connectionUrl = "jdbc:mysql://" + IDBConfig.HOSTNAME
@@ -63,7 +63,7 @@ public class JDBCConnect {
     
     public static void close(){
         JDBCConnect.closeResultSet(rs);
-        JDBCConnect.closePreparedStatement(preparedStatement);
-        JDBCConnect.closeConnection(connection);
+        JDBCConnect.closePreparedStatement(statement);
+        JDBCConnect.closeConnection(conn);
     }
 }
