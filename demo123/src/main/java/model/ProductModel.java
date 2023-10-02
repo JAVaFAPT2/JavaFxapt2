@@ -2,9 +2,8 @@ package model;
 
 import common.CommonLib;
 import common.ICommon;
-import entity.Account;
-import entity.User;
 import dao.JDBCConnect;
+import entity.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,59 +12,58 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class UserModel implements ICommon<User>{
+public class ProductModel implements ICommon<Product> {
     private CommonLib commonLib;
-    private static final String table="user";
+    private static final String table="product";
     private Connection connection = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet rs = null;
-
-    public void setValueForUser(User User) throws SQLException {
-        User.setId(rs.getInt("id"));
-        User.setName(rs.getString("name"));
-        User.setPhone(rs.getString("phone"));
+    public void setValueForProduct(Product Product) throws SQLException {
+        Product.setProductId(rs.getInt("product_id"));
+        Product.setProductName(rs.getString("product_name"));
+        Product.setPrice(rs.getFloat("price"));
     }
 
-    public void setValueForParam(PreparedStatement ps, User User) throws SQLException {
-        ps.setInt(1,User.getId());
-        ps.setString(2,User.getName());
-        ps.setString(3, User.getPhone());
+    public void setValueForParam(PreparedStatement ps, Product Product) throws SQLException {
+
+        ps.setString(1,Product.getProductName());
+        ps.setFloat(2, Product.getPrice());
     }
 
     @Override
-    public ArrayList<User> getAll() {
-        ArrayList<User> arrayList = new ArrayList<>();
+    public ArrayList<Product> getAll() {
+        ArrayList<Product> arrayList = new ArrayList<>();
         rs= commonLib.getAll(table);
         try{
             while (rs.next()) {
-                User User = new User();
-                arrayList.add(User);
+                Product Product = new Product();
+                arrayList.add(Product);
             }
         }catch (SQLException ignored){}
         return arrayList;
     }
 
     @Override
-    public User getOne(int id) {
+    public Product getOne(int id) {
         rs = commonLib.getOne(table,id);
-        User User = new User();
+        Product Product = new Product();
         try {
-            if (rs.next()) setValueForUser(User);
+            if (rs.next()) setValueForProduct(Product);
         } catch (SQLException ignored) {
         }
-        return User;
+        return Product;
     }
 
     @Override
-    public boolean add(User User) {
+    public boolean add(Product Product) {
         int flag = 0;
-        String UpdateTableSQL = "INSERT INTO User"
-                + "(name, phone) VALUE"
+        String UpdateTableSQL = "INSERT INTO Product"
+                + "(product_name, price) VALUE"
                 + "(?,?)";
         try (Connection con = JDBCConnect.getJDBCConnection()) {
             assert con != null;
             try (PreparedStatement ps = con.prepareStatement(UpdateTableSQL))  {
-                new UserModel().setValueForParam(ps, User);
+                new ProductModel().setValueForParam(ps, Product);
                 flag = ps.executeUpdate();
                 System.out.println("Record is inserted!");
             }
@@ -77,14 +75,14 @@ public class UserModel implements ICommon<User>{
     }
 
     @Override
-    public boolean update(User User, int id) {
+    public boolean update(Product Product, int id) {
         int flag = 0;
-        String UpdateTableSQL = "UPDATE User SET name = ?, phone = ?"
+        String UpdateTableSQL = "UPDATE Product SET product_name = ?, price = ?"
                 + "where id = ?";
         try (Connection con = JDBCConnect.getJDBCConnection()) {
             assert con != null;
             try (PreparedStatement ps = con.prepareStatement(UpdateTableSQL))  {
-                new UserModel().setValueForParam(ps, User);
+                new ProductModel().setValueForParam(ps, Product);
                 ps.setInt(3, id);
                 //execute update SQL statement
                 flag = ps.executeUpdate();
@@ -100,7 +98,7 @@ public class UserModel implements ICommon<User>{
     @Override
     public boolean delete(int id) {
         boolean flag ;
-        if (Objects.isNull(new UserModel().getOne(id))) {
+        if (Objects.isNull(new ProductModel().getOne(id))) {
             System.out.println("Not Found Object to Delete");
             return false;
         } else {
@@ -109,5 +107,4 @@ public class UserModel implements ICommon<User>{
         JDBCConnect.close(connection,rs,preparedStatement);
         return flag ;
     }
-
 }

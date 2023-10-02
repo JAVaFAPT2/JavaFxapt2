@@ -2,9 +2,8 @@ package model;
 
 import common.CommonLib;
 import common.ICommon;
-import entity.Account;
-import entity.User;
 import dao.JDBCConnect;
+import entity.Table;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,59 +12,56 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class UserModel implements ICommon<User>{
+public class TableModel implements ICommon<Table> {
     private CommonLib commonLib;
-    private static final String table="user";
+    private static final String table="tbltable";
     private Connection connection = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet rs = null;
 
-    public void setValueForUser(User User) throws SQLException {
-        User.setId(rs.getInt("id"));
-        User.setName(rs.getString("name"));
-        User.setPhone(rs.getString("phone"));
+    public void setValueForTable(Table Table) throws SQLException {
+        Table.setTableId(rs.getInt("table_id"));
+        Table.setStatus(rs.getInt("status"));
     }
 
-    public void setValueForParam(PreparedStatement ps, User User) throws SQLException {
-        ps.setInt(1,User.getId());
-        ps.setString(2,User.getName());
-        ps.setString(3, User.getPhone());
+    public void setValueForParam(PreparedStatement ps, Table Table) throws SQLException {
+        ps.setInt(1,Table.getStatus());
     }
 
     @Override
-    public ArrayList<User> getAll() {
-        ArrayList<User> arrayList = new ArrayList<>();
+    public ArrayList<Table> getAll() {
+        ArrayList<Table> arrayList = new ArrayList<>();
         rs= commonLib.getAll(table);
         try{
             while (rs.next()) {
-                User User = new User();
-                arrayList.add(User);
+                Table Table = new Table();
+                arrayList.add(Table);
             }
         }catch (SQLException ignored){}
         return arrayList;
     }
 
     @Override
-    public User getOne(int id) {
+    public Table getOne(int id) {
         rs = commonLib.getOne(table,id);
-        User User = new User();
+        Table Table = new Table();
         try {
-            if (rs.next()) setValueForUser(User);
+            if (rs.next()) setValueForTable(Table);
         } catch (SQLException ignored) {
         }
-        return User;
+        return Table;
     }
 
     @Override
-    public boolean add(User User) {
+    public boolean add(Table Table) {
         int flag = 0;
-        String UpdateTableSQL = "INSERT INTO User"
-                + "(name, phone) VALUE"
-                + "(?,?)";
+        String UpdateTableSQL = "INSERT INTO " + table
+                + "(status) VALUE"
+                + "(?)";
         try (Connection con = JDBCConnect.getJDBCConnection()) {
             assert con != null;
             try (PreparedStatement ps = con.prepareStatement(UpdateTableSQL))  {
-                new UserModel().setValueForParam(ps, User);
+                new TableModel().setValueForParam(ps, Table);
                 flag = ps.executeUpdate();
                 System.out.println("Record is inserted!");
             }
@@ -77,14 +73,14 @@ public class UserModel implements ICommon<User>{
     }
 
     @Override
-    public boolean update(User User, int id) {
+    public boolean update(Table Table, int id) {
         int flag = 0;
-        String UpdateTableSQL = "UPDATE User SET name = ?, phone = ?"
-                + "where id = ?";
+        String UpdateTableSQL = "UPDATE "+table+" SET status = ?"
+                + "where table_id = ?";
         try (Connection con = JDBCConnect.getJDBCConnection()) {
             assert con != null;
             try (PreparedStatement ps = con.prepareStatement(UpdateTableSQL))  {
-                new UserModel().setValueForParam(ps, User);
+                new TableModel().setValueForParam(ps, Table);
                 ps.setInt(3, id);
                 //execute update SQL statement
                 flag = ps.executeUpdate();
@@ -100,7 +96,7 @@ public class UserModel implements ICommon<User>{
     @Override
     public boolean delete(int id) {
         boolean flag ;
-        if (Objects.isNull(new UserModel().getOne(id))) {
+        if (Objects.isNull(new TableModel().getOne(id))) {
             System.out.println("Not Found Object to Delete");
             return false;
         } else {

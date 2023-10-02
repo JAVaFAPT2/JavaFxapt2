@@ -5,11 +5,9 @@ import config.IDBConfig;
 import java.sql.*;
 
 public class JDBCConnect {
-    static Connection conn = null;
-    static PreparedStatement statement = null;
-    static ResultSet rs = null;
+
     public static Connection getJDBCConnection() {
-        Connection con = null;
+        Connection con ;
         String connectionUrl = "jdbc:mysql://" + IDBConfig.HOSTNAME
                 + ":" + IDBConfig.PORT + "/"
                 + IDBConfig.DBNAME ;
@@ -18,7 +16,7 @@ public class JDBCConnect {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
             System.err.println("Where is your MySQL JDBC Driver?");
-            return con;
+            return null;
         }
         System.out.println("MySQL JDBC Driver Registered!");
         
@@ -26,7 +24,7 @@ public class JDBCConnect {
             con = DriverManager.getConnection(connectionUrl, IDBConfig.USERNAME, IDBConfig.PASSWORD);
         } catch (SQLException ex) {
             System.err.println("Connection Failed! Check output console");
-            return con;
+            return null;
         }
         return con;
     }
@@ -61,9 +59,9 @@ public class JDBCConnect {
         }
     }
     
-    public static void close(){
+    public static void close(Connection connection,ResultSet rs,PreparedStatement preparedStatement)  {
         JDBCConnect.closeResultSet(rs);
-        JDBCConnect.closePreparedStatement(statement);
-        JDBCConnect.closeConnection(conn);
+        JDBCConnect.closePreparedStatement(preparedStatement);
+        JDBCConnect.closeConnection(connection);
     }
 }

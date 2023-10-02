@@ -9,7 +9,7 @@ public class JDBCConnect {
         Connection con = null;
         String connectionUrl = "jdbc:mysql://" + IDBConfig.HOSTNAME
                 + ":" + IDBConfig.PORT + "/"
-                + IDBConfig.DBNAME;
+                + IDBConfig.DBNAME ;
         System.out.println(connectionUrl);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -58,9 +58,9 @@ public class JDBCConnect {
         }
     }
     
-    public static void main(String[] args) {
-        
-        System.out.println(JDBCConnect.getJDBCConnection());
-        
+    public static void close(PreparedStatement preparedStatement,ResultSet rs,Connection connection ){
+        JDBCConnect.closeResultSet(rs);
+        JDBCConnect.closePreparedStatement(preparedStatement);
+        JDBCConnect.closeConnection(connection);
     }
 }

@@ -4,31 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a1da849-a084-4966-99b9-19c9e796155f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/JavaFxapt2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/JDBCDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/common/ICommon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/config/IDBConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/dao/JDBCConnect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/entity/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBCDemo/out/production/JDBCDemo/model/StudentModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/config/IDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/account.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/accountmodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/org/example/accountmodel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" afterDir="false" />
+    <list default="true" id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="git commit -m&quot;add entity&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/config/IDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/config/IDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/entity/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/AccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/AccountModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/EquipmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/EquipmentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/IngredientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/IngredientModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/OrderDetailModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/OrderDetailModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/OrderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/ProductDetailModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/ProductDetailModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/ProductModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/TableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/model/UserModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +32,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2Vyq48RGPNcaee8qSSYT3zOiit0" />
+  <component name="ProjectId" id="2W3Q7u8b2AXBnVbGryzwczozbqU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -67,64 +53,66 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dang",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/dangq/JavaFxapt2",
+    "last_opened_file_path": "D:/JDBCDemo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dangq\JavaTest1\demo123\src\main" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JavaFxapt2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JavaFxapt2" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0a1da849-a084-4966-99b9-19c9e796155f" name="Changes" comment="" />
-      <created>1695818473961</created>
+      <changelist id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="" />
+      <created>1695958621098</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695818473961</updated>
-      <workItem from="1695818475010" duration="3360000" />
-      <workItem from="1695822001968" duration="1959000" />
-      <workItem from="1695824867273" duration="251000" />
+      <updated>1695958621098</updated>
+      <workItem from="1695958627827" duration="1034000" />
+      <workItem from="1695959669807" duration="2140000" />
+      <workItem from="1695977480705" duration="3991000" />
+      <workItem from="1696041827057" duration="3099000" />
+      <workItem from="1696158027770" duration="626000" />
+      <workItem from="1696167531359" duration="6525000" />
+      <workItem from="1696237383287" duration="6948000" />
     </task>
+    <task id="LOCAL-00001" summary="git commit -m&quot;add entity&quot;">
+      <option name="closed" value="true" />
+      <created>1695978007990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695978007990</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git commit -m&quot;add entity&quot;">
+      <option name="closed" value="true" />
+      <created>1695978054775</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695978054775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="git commit -m&quot;add entity&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m&quot;add entity&quot;" />
   </component>
 </project>

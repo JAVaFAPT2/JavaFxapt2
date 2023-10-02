@@ -1,36 +1,27 @@
 package entity;
 
+import java.sql.Date;
+
 public class Equipment {
-    private int equipment_id;
-    private String equipment_name;
+    private int equipmentId;
+    private String equipmentName;
     private int status;
-    private String maintain_date;
+    private Date maintainDate;
 
-
-    public Equipment(int equipment_id, String equipment_name, int status, String maintain_date) {
-        this.equipment_id = equipment_id;
-        this.equipment_name = equipment_name;
-        this.status = status;
-        this.maintain_date = maintain_date;
+    public int getEquipmentId() {
+        return equipmentId;
     }
 
-    public Equipment() {
+    public void setEquipmentId(int equipmentId) {
+        this.equipmentId = equipmentId;
     }
 
-    public int getEquipment_id() {
-        return equipment_id;
+    public String getEquipmentName() {
+        return equipmentName;
     }
 
-    public void setEquipment_id(int equipment_id) {
-        this.equipment_id = equipment_id;
-    }
-
-    public String getEquipment_name() {
-        return equipment_name;
-    }
-
-    public void setEquipment_name(String equipment_name) {
-        this.equipment_name = equipment_name;
+    public void setEquipmentName(String equipmentName) {
+        this.equipmentName = equipmentName;
     }
 
     public int getStatus() {
@@ -41,21 +32,21 @@ public class Equipment {
         this.status = status;
     }
 
-    public String getMaintain_date() {
-        return maintain_date;
+    public Date getMaintainDate() {
+        return maintainDate;
     }
 
-    public void setMaintain_date(String maintain_date) {
-        this.maintain_date = maintain_date;
+    public void setMaintainDate(Date maintainDate) {
+        this.maintainDate = maintainDate;
     }
 
-    @Override
-    public String toString() {
-        return "Equipment{" +
-                "equipment_id=" + equipment_id +
-                ", equipment_name='" + equipment_name + '\'' +
-                ", status=" + status +
-                ", maintain_date='" + maintain_date + '\'' +
-                '}';
+    public Equipment(int equipmentId, String equipmentName, int status, Date maintainDate) {
+        this.equipmentId = equipmentId;
+        this.equipmentName = equipmentName;
+        this.status = status;
+        this.maintainDate = maintainDate;
+    }
+
+    public Equipment() {
     }
 }
