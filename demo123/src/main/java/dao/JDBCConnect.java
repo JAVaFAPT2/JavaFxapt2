@@ -5,7 +5,8 @@ import config.IDBConfig;
 import java.sql.*;
 
 public class JDBCConnect {
-
+public static PreparedStatement prepareStatement ;
+public static Connection conn ;
     public static Connection getJDBCConnection() {
         Connection con ;
         String connectionUrl = "jdbc:mysql://" + IDBConfig.HOSTNAME
