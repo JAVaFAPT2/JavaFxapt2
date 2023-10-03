@@ -21,5 +21,6 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:20.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:20.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:20.0.1" level="project" />
+    <orderEntry type="library" name="realityforge.jetbrains.annotations" level="project" />
   </component>
 </module>
