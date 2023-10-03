@@ -13,13 +13,13 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="5.0" styleClass="right-side-border" stylesheets="@../../../../../values/style.css" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="5.0" styleClass="right-side-border" stylesheets="@../../../resources/css/style.css" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/logo.jpg" />
+                        <Image url="@../../../../../target/classes/image/logo.jpg" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Dashboard">
@@ -33,7 +33,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/order_icon.png" />
+                        <Image url="@../../../../../target/classes/image/order_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Orders">
@@ -47,7 +47,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/table_icon.png" />
+                        <Image url="@../../../../../target/classes/image/table_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Tables">
@@ -61,7 +61,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/analystic_icon.png" />
+                        <Image url="@../../../../../target/classes/image/analystic_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Analytics">
@@ -75,7 +75,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/storage_icon.png" />
+                        <Image url="@../../../../../target/classes/image/storage_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Storage">
@@ -89,7 +89,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/equipment_icon.png" />
+                        <Image url="@../../../../../target/classes/image/equipment_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Equipment">
@@ -103,7 +103,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/help_icon.png" />
+                        <Image url="@../../../../../target/classes/image/help_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="Help">
@@ -117,7 +117,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/about_icon.png" />
+                        <Image url="@../../../../../target/classes/image/about_icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="22.0" prefWidth="183.0" text="About">
@@ -136,37 +136,37 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="white-background" stylesheets="@../../../../../values/style.css">
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="white-background" stylesheets="@../../../resources/css/style.css">
                <children>
                   <Pane prefHeight="86.0" prefWidth="582.0" HBox.hgrow="ALWAYS" />
-                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="303.0" styleClass="search-container" stylesheets="@../../../../../values/style.css">
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="303.0" styleClass="search-container" stylesheets="@../../../resources/css/style.css">
                      <children>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../image_icon/find_icon.png" />
+                              <Image url="@../../../../../target/classes/image/find_icon.png" />
                            </image>
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
                         </ImageView>
-                        <TextField prefHeight="25.0" prefWidth="246.0" promptText="search" styleClass="transparent" stylesheets="@../../../../../values/style.css" />
+                        <TextField prefHeight="25.0" prefWidth="246.0" promptText="search" styleClass="transparent" stylesheets="@../../../resources/css/style.css" />
                      </children>
                   </HBox>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../image_icon/notification_icon.png" />
+                        <Image url="@../../../../../target/classes/image/notification_icon.png" />
                      </image>
                   </ImageView>
                   <HBox alignment="CENTER">
                      <children>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../image_icon/user_icon.png" />
+                              <Image url="@../../../../../target/classes/image/user_icon.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../image_icon/arrow_down_icon.png" />
+                              <Image url="@../../../../../target/classes/image/arrow_down_icon.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -176,7 +176,7 @@
                   </HBox>
                </children>
             </HBox>
-            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@../../../../../values/style.css" VBox.vgrow="ALWAYS">
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@../../../resources/css/style.css" VBox.vgrow="ALWAYS">
                <children>
                   <VBox spacing="20.0">
                      <children>
@@ -187,7 +187,7 @@
                         </Label>
                         <HBox prefHeight="120.0" prefWidth="200.0" spacing="20.0">
                            <children>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../../../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../resources/css/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="44.0" prefWidth="240.0">
                                        <children>
@@ -199,7 +199,7 @@
                                           <Pane prefHeight="200.0" prefWidth="200.0" />
                                           <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/clients_icon.png" />
+                                                <Image url="@../../../../../target/classes/image/clients_icon.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -214,7 +214,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@../../../../../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@../../../resources/css/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="44.0" prefWidth="240.0">
                                        <children>
@@ -226,7 +226,7 @@
                                           <Pane prefHeight="200.0" prefWidth="200.0" />
                                           <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/white_order_icon.png" />
+                                                <Image url="@../../../../../target/classes/image/white_order_icon.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -241,7 +241,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../../../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../resources/css/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="44.0" prefWidth="240.0">
                                        <children>
@@ -253,7 +253,7 @@
                                           <Pane prefHeight="200.0" prefWidth="200.0" />
                                           <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/blue_table_icon.png" />
+                                                <Image url="@../../../../../target/classes/image/blue_table_icon.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -268,7 +268,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../../../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../../../resources/css/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="44.0" prefWidth="240.0">
                                        <children>
@@ -280,7 +280,7 @@
                                           <Pane prefHeight="200.0" prefWidth="200.0" />
                                           <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/pink_money_icon.png" />
+                                                <Image url="@../../../../../target/classes/image/pink_money_icon.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -314,7 +314,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="53.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/clients_1.png" />
+                                                <Image url="@../../../../../target/classes/image/clients_1.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -343,7 +343,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="105.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/clients_2.png" />
+                                                <Image url="@../../../../../target/classes/image/clients_2.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -372,7 +372,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/clients_3.png" />
+                                                <Image url="@../../../../../target/classes/image/clients_3.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -401,7 +401,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../image_icon/clients_4.png" />
+                                                <Image url="@../../../../../target/classes/image/clients_4.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -433,7 +433,7 @@
                   </VBox>
                   <HBox prefHeight="170.0" prefWidth="200.0" spacing="20.0">
                      <children>
-                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../../../../../values/style.css">
+                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../../../resources/css/style.css">
                            <children>
                               <Label prefHeight="25.0" prefWidth="141.0" text="Invoices Flow">
                                  <font>
@@ -493,7 +493,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </VBox>
-                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../../../../../values/style.css">
+                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../../../resources/css/style.css">
                            <children>
                               <Label prefHeight="25.0" prefWidth="141.0" text="Tables Status">
                                  <font>
