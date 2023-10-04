@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="git commit -m&quot;add entity&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/org/example/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +89,7 @@
       <workItem from="1696353633664" duration="409000" />
       <workItem from="1696354092274" duration="717000" />
       <workItem from="1696413565358" duration="3077000" />
+      <workItem from="1696421514596" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="git commit -m&quot;add entity&quot;">
       <option name="closed" value="true" />
