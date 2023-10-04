@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="git commit -m&quot;add entity&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/demo123.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/demo123.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/common/CommonLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/common/CommonLib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/common/ICommon.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/common/ICommon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/config/IDBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/config/IDBConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/dao/JDBCConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/dao/JDBCConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Equipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Equipment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Ingredient.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Ingredient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/ProductDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/ProductDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/AccountModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/AccountModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/EquipmentModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/EquipmentModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/IngredientModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/IngredientModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/OrderDetailModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/OrderDetailModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/OrderModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/OrderModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/ProductDetailModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/ProductDetailModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/ProductModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/ProductModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/TableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/TableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/UserModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/PrimaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/SecondaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/org/example/dashboard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="git commit -m&quot;add entity&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,36 +37,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dangq/JavaFxapt2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/dangq/JavaFxapt2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -119,7 +85,7 @@
       <workItem from="1696248867724" duration="4724000" />
       <workItem from="1696309142068" duration="408000" />
       <workItem from="1696353633664" duration="409000" />
-      <workItem from="1696354092274" duration="124000" />
+      <workItem from="1696354092274" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="git commit -m&quot;add entity&quot;">
       <option name="closed" value="true" />
