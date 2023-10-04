@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="810.0" prefWidth="300.0" stylesheets="@values/style.css" BorderPane.alignment="CENTER">
+         <styleClass>
+            <String fx:value="primary-color" />
+            <String fx:value="right-side-border" />
+         </styleClass>
+         <children>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="249.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logo.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="34.0" prefWidth="151.0" text="Meow Coffee">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="403.0" prefWidth="299.0" />
+            <VBox>
+               <children>
+                  <Label text="Status">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font></Label>
+                  <HBox prefHeight="254.0" prefWidth="259.0">
+                     <children>
+                        <VBox prefHeight="297.0" prefWidth="140.0" spacing="20.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Pane prefHeight="78.0" prefWidth="140.0" style="-fx-background-color: #00BF63; -fx-background-radius: 10;" />
+                                    <Label text="Empty">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Pane prefHeight="78.0" prefWidth="140.0" style="-fx-background-color: #FF3131; -fx-background-radius: 10;" />
+                                    <Label prefHeight="20.0" prefWidth="43.0" text="In use">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="297.0" prefWidth="140.0" spacing="20.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Pane prefHeight="78.0" prefWidth="140.0" style="-fx-background-color: #8C52FF; -fx-background-radius: 10;" />
+                                    <Label prefHeight="17.0" prefWidth="66.0" text="Reserved">
+                                       <font>
+                                          <Font name="Arial" size="13.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Pane prefHeight="78.0" prefWidth="140.0" style="-fx-background-color: #FFF685; -fx-background-radius: 10;" />
+                                    <Label prefHeight="20.0" prefWidth="162.0" text="Paid but still there">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="810.0" prefWidth="1171.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Tables">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="710.0" prefWidth="1015.0" spacing="40.0" styleClass="background-color" stylesheets="@values/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="190.0" prefWidth="1015.0">
+                     <children>
+                        <VBox prefHeight="223.0" prefWidth="300.0" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #FF3131; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #00BF63; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="190.0" prefWidth="1015.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #00BF63; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #FF3131; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #8C52FF; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="190.0" prefWidth="1015.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #FFF685; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #00BF63; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                           <children>
+                              <Pane prefHeight="138.0" prefWidth="208.0" style="-fx-background-color: #FFF685; -fx-background-radius: 10;">
+                                 <children>
+                                    <ImageView fitHeight="137.0" fitWidth="200.0" layoutX="62.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/table_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Choose" textAlignment="CENTER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </VBox>
+         </children></VBox>
+   </center>
+</BorderPane>
