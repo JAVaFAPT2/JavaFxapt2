@@ -13,11 +13,7 @@ import java.util.List;
 import views.StudentView;
 import views.TeacherView;
 
-/**
- * The type Schedule controller.
- *
- * @author GreenRain
- */
+
 public class ScheduleController {
 
     private TeacherView view;

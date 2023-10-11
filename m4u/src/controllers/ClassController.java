@@ -11,11 +11,7 @@ import javax.swing.table.DefaultTableModel;
 import models.Classes;
 import views.Dashboard;
 
-/**
- * The type Class controller.
- *
- * @author hieuv
- */
+
 public class ClassController {
 
     private Dashboard view;

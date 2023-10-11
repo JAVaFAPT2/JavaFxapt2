@@ -4,11 +4,7 @@
  */
 package models;
 
-/**
- * The type User.
- *
- * @author GreenRain
- */
+
 public class User {
     private int id;
     private int user_id;

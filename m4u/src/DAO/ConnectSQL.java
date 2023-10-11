@@ -13,11 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.User;
 
-/**
- * The type Connect sql.
- *
- * @author GreenRain
- */
+
 public class ConnectSQL {
 
     /**

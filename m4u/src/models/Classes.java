@@ -4,11 +4,7 @@
  */
 package models;
 
-/**
- * The type Classes.
- *
- * @author GreenRain
- */
+
 public class Classes {
     private int class_id;
     private String class_name;

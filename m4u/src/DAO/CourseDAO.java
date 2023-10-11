@@ -14,11 +14,7 @@ import java.util.logging.Logger;
 import models.Course;
 import views.TeacherView;
 
-/**
- * The type Course dao.
- *
- * @author GreenRain
- */
+
 public class CourseDAO extends ConnectSQL {
 
     private TeacherView view;

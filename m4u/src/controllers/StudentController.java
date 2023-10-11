@@ -4,11 +4,7 @@
  */
 package controllers;
 
-/**
- * The type Student controller.
- *
- * @author GreenRain
- */
+
 public class StudentController {
     
 }

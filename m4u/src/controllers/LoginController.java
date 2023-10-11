@@ -14,11 +14,7 @@ import views.Dashboard;
 import views.StudentView;
 import views.TeacherView;
 
-/**
- * The type Login controller.
- *
- * @author GreenRain
- */
+
 public class LoginController {
 
     private LoginView view;

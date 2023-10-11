@@ -6,11 +6,7 @@ package models;
 
 import java.util.Scanner;
 
-/**
- * The type Students.
- *
- * @author GreenRain
- */
+
 public class Students {
 
     private int student_id;

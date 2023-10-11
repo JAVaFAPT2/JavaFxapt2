@@ -5,11 +5,7 @@
 package models;
 
 
-/**
- * The type Schedule.
- *
- * @author GreenRain
- */
+
 public class Schedule {
     private int scheduleId;
     private int teacherId;

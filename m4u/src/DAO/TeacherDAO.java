@@ -16,11 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Teacher;
 
-/**
- * The type Teacher dao.
- *
- * @author GreenRain
- */
+
 public class TeacherDAO extends ConnectSQL {
 
     /**

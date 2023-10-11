@@ -12,11 +12,7 @@ import DAO.ExamResultDAO;
 import views.StudentView;
 import views.TeacherView;
 
-/**
- * The type Exam result controller.
- *
- * @author GreenRain
- */
+
 public class ExamResultController {
 
     private TeacherView view;

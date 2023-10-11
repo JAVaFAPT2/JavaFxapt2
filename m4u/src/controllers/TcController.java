@@ -17,11 +17,7 @@ import javax.swing.table.DefaultTableModel;
 import models.Teacher;
 import views.Dashboard;
 
-/**
- * The type Tc controller.
- *
- * @author hieuv
- */
+
 public class TcController {
     private Dashboard view;
     private List<Teacher> dataList = new ArrayList<>();
