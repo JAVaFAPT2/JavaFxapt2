@@ -12,11 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Classes;
 
-/**
- * The type Class dao.
- *
- * @author GreenRain
- */
+
 public class ClassDAO extends ConnectSQL {
     /**
      * Gets max.

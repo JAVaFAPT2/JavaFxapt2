@@ -9,9 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Students;
 
-/**
- * The type Students dao.
- */
+
 public class StudentsDAO extends ConnectSQL {
 
     /**

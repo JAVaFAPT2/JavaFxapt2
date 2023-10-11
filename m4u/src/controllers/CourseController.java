@@ -11,11 +11,7 @@ import models.Course;
 import DAO.CourseDAO;
 import views.TeacherView;
 
-/**
- * The type Course controller.
- *
- * @author GreenRain
- */
+
 public class CourseController {
 
     private TeacherView view;

@@ -13,11 +13,7 @@ import java.util.logging.Logger;
 import models.ExamResult;
 import views.TeacherView;
 
-/**
- * The type Exam result dao.
- *
- * @author GreenRain
- */
+
 public class ExamResultDAO extends ConnectSQL {
 
     private TeacherView view;

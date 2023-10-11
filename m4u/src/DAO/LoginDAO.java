@@ -12,11 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.User;
 
-/**
- * The type Login dao.
- *
- * @author GreenRain
- */
+
 public class LoginDAO extends ConnectSQL {
 
     /**

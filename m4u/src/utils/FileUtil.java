@@ -12,11 +12,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * The type File util.
- *
- * @author GreenRain
- */
 public class FileUtil {
     /**
      * Save file.

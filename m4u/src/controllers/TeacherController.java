@@ -12,11 +12,7 @@ import models.Students;
 import DAO.StudentsDAO;
 import views.TeacherView;
 
-/**
- * The type Teacher controller.
- *
- * @author GreenRain
- */
+
 public class TeacherController {
 
     private TeacherView view;

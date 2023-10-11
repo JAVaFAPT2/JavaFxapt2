@@ -4,11 +4,7 @@
  */
 package models;
 
-/**
- * The type Course.
- *
- * @author GreenRain
- */
+
 public class Course {
 
     private int course_id;

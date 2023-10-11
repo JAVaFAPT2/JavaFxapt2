@@ -12,11 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Schedule;
 
-/**
- * The type Schedule dao.
- *
- * @author GreenRain
- */
+
 public class ScheduleDAO extends ConnectSQL {
 
     /**

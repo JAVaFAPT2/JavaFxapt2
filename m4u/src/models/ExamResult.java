@@ -4,11 +4,7 @@
  */
 package models;
 
-/**
- * The type Exam result.
- *
- * @author GreenRain
- */
+
 public class ExamResult {
 
     private int examResultId;
