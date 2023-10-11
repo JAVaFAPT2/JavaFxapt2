@@ -5,70 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f4691a-4a06-4990-9aba-5d0519c4bdef" name="Changes" comment="git commit -m&quot;add entity&quot;">
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/controller/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/entity/demoClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/view/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/view/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/view/PrimaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo123/src/main/java/view/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/demo123.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/controller/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/view/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/PrimaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/view/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/java/org/example/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/java/controller/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/Analyticst.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/analytics.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/Equipment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/equipment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/Storage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/storage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/dashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/primary.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/src/main/resources/org/example/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/src/main/resources/view/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/common/CommonLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/common/CommonLib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/common/ICommon.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/common/ICommon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/config/IDBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/config/IDBConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/dao/JDBCConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/dao/JDBCConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Equipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Equipment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Ingredient.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Ingredient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/ProductDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/ProductDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/AccountModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/AccountModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/EquipmentModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/EquipmentModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/IngredientModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/IngredientModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/OrderDetailModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/OrderDetailModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/OrderModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/OrderModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/ProductDetailModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/ProductDetailModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/ProductModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/ProductModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/TableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/TableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/model/UserModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo123/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo123/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/Analyticst.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/DashboardController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/Equipment.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/PrimaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/RegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/SecondaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/Storage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/dashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo123/target/classes/org/example/secondary.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,14 +54,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Duong/a/JavaFxapt2/demo123/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
