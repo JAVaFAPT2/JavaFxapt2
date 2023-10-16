@@ -23,7 +23,7 @@ public class LoginDAO extends ConnectSQL {
      */
     public static User getUserByUserName(String username) {
         User user = null;
-        open();
+       getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM UserAccount WHERE username = ?";
@@ -58,7 +58,7 @@ public class LoginDAO extends ConnectSQL {
     public static List<User> search(String searchValue) {
         List<User> dataList = new ArrayList<>();
 
-        open();
+       getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM useraccount WHERE concat(user_id, username) LIKE ?";
@@ -92,7 +92,7 @@ public class LoginDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+       getJDBCConnection();
         String sql = "select max(userAccount_id) from useraccount";
         try {
             statement = conn.prepareStatement(sql);
@@ -116,7 +116,7 @@ public class LoginDAO extends ConnectSQL {
     public static List<User> select() {
         List<User> dataList = new ArrayList<>();
 
-        open();
+       getJDBCConnection();
         try {
 
             String sql = "select * from useraccount";
@@ -149,7 +149,7 @@ public class LoginDAO extends ConnectSQL {
      * @param user the user
      */
     public static void update(User user) {
-        open();
+       getJDBCConnection();
         try {
             String sql = "update useraccount set user_id = ?, username = ?, password =?, role = ?  where userAccount_id = ?";
             statement = conn.prepareStatement(sql);
@@ -172,7 +172,7 @@ public class LoginDAO extends ConnectSQL {
      * @param id the id
      */
     public static void delete(int id) {
-        open();
+       getJDBCConnection();
         try {
 
             String sql = "delete from useraccount where userAccount_id = ?";
@@ -192,7 +192,7 @@ public class LoginDAO extends ConnectSQL {
      * @param user the user
      */
     public static void insert(User user) {
-        open();
+       getJDBCConnection();
         try {
 
             String sql = "insert into useraccount (user_id, username, password, role) values (?, ?, ?, ?)";
@@ -215,7 +215,7 @@ public class LoginDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIDExits(int id) {
-        open();
+       getJDBCConnection();
         try {
             String sql = "select * from useraccount where user_id = ?";
             statement = conn.prepareStatement(sql);

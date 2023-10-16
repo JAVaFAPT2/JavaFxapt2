@@ -6,7 +6,7 @@ package DAO;
 
 import static DAO.ConnectSQL.close;
 import static DAO.ConnectSQL.conn;
-import static DAO.ConnectSQL.open;
+import static DAO.ConnectSQL.getJDBCConnection;
 import static DAO.ConnectSQL.statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Teacher;
-
 
 public class TeacherDAO extends ConnectSQL {
 
@@ -28,7 +27,7 @@ public class TeacherDAO extends ConnectSQL {
     public static List<Teacher> search(String searchValue) {
         List<Teacher> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM teacher WHERE concat(teacher_id, fullname, gender, email, phoneNumber) LIKE ?";
@@ -63,7 +62,7 @@ public class TeacherDAO extends ConnectSQL {
     public static List<Teacher> select() {
         List<Teacher> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from teacher";
@@ -96,7 +95,7 @@ public class TeacherDAO extends ConnectSQL {
      * @param tc the tc
      */
     public static void insert(Teacher tc) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "insert into teacher (fullname, gender, email, phoneNumber) values (?, ?, ?, ?)";
@@ -119,7 +118,7 @@ public class TeacherDAO extends ConnectSQL {
      * @param tc the tc
      */
     public static void update(Teacher tc) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "update teacher set fullname = ?, email = ?, gender = ?, phoneNumber = ? where teacher_id = ?";
             statement = conn.prepareStatement(sql);
@@ -141,7 +140,7 @@ public class TeacherDAO extends ConnectSQL {
      * @param id the id
      */
     public static void delete(int id) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "delete from teacher where teacher_id = ?";
@@ -162,7 +161,7 @@ public class TeacherDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         String sql = "select max(teacher_id) from teacher";
         try {
             statement = conn.prepareStatement(sql);
@@ -184,7 +183,7 @@ public class TeacherDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIDExits(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from teacher where teacher_id = ?";
             statement = conn.prepareStatement(sql);
@@ -209,7 +208,7 @@ public class TeacherDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isEmailExits(String email) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from teacher where email = ?";
             statement = conn.prepareStatement(sql);
@@ -234,7 +233,7 @@ public class TeacherDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isPhoneExits(String phone) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from teacher where phoneNumber = ?";
             statement = conn.prepareStatement(sql);

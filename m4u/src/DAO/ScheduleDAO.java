@@ -22,7 +22,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIDExits(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from schedule where schedule_id = ?";
             statement = conn.prepareStatement(sql);
@@ -48,7 +48,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isScheduleIdRegistered(int studentId, int scheduleId) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT * FROM student_schedule WHERE  schedule_id = ? AND student_id = ?;";
             statement = conn.prepareStatement(sql);
@@ -72,7 +72,7 @@ public class ScheduleDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         String sql = "select max(schedule_id) from schedule";
         try {
             statement = conn.prepareStatement(sql);
@@ -94,7 +94,7 @@ public class ScheduleDAO extends ConnectSQL {
      */
     public List<Schedule> getAllSchedules() {
         List<Schedule> scheduleList = new ArrayList<>();
-        open();
+        getJDBCConnection();
         String sql = "SELECT * FROM schedule";
 
         try {
@@ -128,7 +128,7 @@ public class ScheduleDAO extends ConnectSQL {
      */
     public List<Schedule> getScheduleBySearch(String search) {
         List<Schedule> scheduleList = new ArrayList<>();
-        open();
+        getJDBCConnection();
         String sql = "SELECT * FROM schedule WHERE concat(schedule_id, teacher_id, class_id, course_name) LIKE ?";
 
         try {
@@ -161,7 +161,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @param scheduleId the schedule id
      */
     public void removeSchedule(int scheduleId) {
-        open();
+        getJDBCConnection();
         String sql = "DELETE FROM schedule WHERE schedule_id = ?";
 
         try {
@@ -181,7 +181,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @param schedule the schedule
      */
     public void addSchedule(Schedule schedule) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "INSERT INTO schedule (teacher_id, class_id, course_name, start_time, end_time, date_of_week, time_of_day) VALUES (?, ?, ?, ?, ?, ?, ?)";
             statement = conn.prepareStatement(sql);
@@ -206,7 +206,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @param schedule the schedule
      */
     public void addScheduleStudent(Schedule schedule) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "INSERT INTO student_schedule (schedule_id, student_id) VALUES (?, ?)";
             statement = conn.prepareStatement(sql);
@@ -228,7 +228,7 @@ public class ScheduleDAO extends ConnectSQL {
      */
     public List<Schedule> getRegisteredByStudent(int sid) {
         List<Schedule> scheduleList = new ArrayList<>();
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT s.schedule_id, s.teacher_id, s.class_id, s.course_name, s.start_time, s.end_time, s.date_of_week, s.time_of_day " +
                     "FROM Schedule s " +
@@ -264,7 +264,7 @@ public class ScheduleDAO extends ConnectSQL {
      * @param schedule the schedule
      */
     public void updateSchedule(Schedule schedule) {
-        open();
+        getJDBCConnection();
         try {
             String query = "UPDATE schedule SET teacher_id = ?, class_id = ?, course_name = ?, start_time = ?, end_time = ?, date_of_week = ?, time_of_day = ? WHERE schedule_id = ?";
             statement = conn.prepareStatement(query);

@@ -9,7 +9,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Students;
 
-
+/**
+ * The type Students dao.
+ */
 public class StudentsDAO extends ConnectSQL {
 
     /**
@@ -21,7 +23,7 @@ public class StudentsDAO extends ConnectSQL {
     public static List<Students> search(String searchValue) {
         List<Students> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM student WHERE concat(student_id, fullname, email, phoneNumber) LIKE ?";
@@ -59,7 +61,7 @@ public class StudentsDAO extends ConnectSQL {
     public static List<Students> sortByName() {
         List<Students> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
             //B2. Query du lieu ra
             String sql = "select * from student order by fullname asc";
@@ -97,7 +99,7 @@ public class StudentsDAO extends ConnectSQL {
     public static List<Students> select() {
         List<Students> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from student";
@@ -133,7 +135,7 @@ public class StudentsDAO extends ConnectSQL {
      * @param std the std
      */
     public static void insert(Students std) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "insert into student (fullname, birthday, gender, address, email, phoneNumber, image_path) values (?, ?, ?, ?, ?, ?, ?)";
@@ -159,7 +161,7 @@ public class StudentsDAO extends ConnectSQL {
      * @param std the std
      */
     public static void update(Students std) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "update student set fullname = ?, email = ?, birthday = ?, address = ?, gender = ?, phoneNumber = ?, "
                     + "image_path = ? where student_id = ?";
@@ -186,7 +188,7 @@ public class StudentsDAO extends ConnectSQL {
      * @param id the id
      */
     public static void delete(int id) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "delete from student where student_id = ?";
@@ -208,7 +210,7 @@ public class StudentsDAO extends ConnectSQL {
      */
     public static Students findByEmail(String email) {
         Students std = null;
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from student where email = ?";
@@ -263,7 +265,7 @@ public class StudentsDAO extends ConnectSQL {
      */
     public static Students findById(int id) {
         Students std = null;
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from student where student_id = ?";
@@ -301,7 +303,7 @@ public class StudentsDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         String sql = "select max(student_id) from student";
         try {
             statement = conn.prepareStatement(sql);
@@ -324,7 +326,7 @@ public class StudentsDAO extends ConnectSQL {
      */
     public static void updateByEmail(Students std) {
         System.out.println("---update import ---");
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "update student set fullname = ?, address = ?, birthday = ?, gender = ?, phoneNumber = ? where email = ?";
@@ -350,7 +352,7 @@ public class StudentsDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isEmailExits(String email) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from student where email = ?";
             statement = conn.prepareStatement(sql);
@@ -375,7 +377,7 @@ public class StudentsDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isPhoneExits(String phone) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from student where phoneNumber = ?";
             statement = conn.prepareStatement(sql);
@@ -400,7 +402,7 @@ public class StudentsDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIDExits(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from student where student_id = ?";
             statement = conn.prepareStatement(sql);

@@ -5,7 +5,6 @@
 package models;
 
 
-
 public class Schedule {
     private int scheduleId;
     private int teacherId;

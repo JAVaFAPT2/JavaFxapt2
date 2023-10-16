@@ -4,36 +4,40 @@
  */
 package controllers;
 
-import java.text.SimpleDateFormat;
+import static DAO.ConnectSQL.getJDBCConnection;
+import DAO.StudentsDAO;
+import DAO.TeacherDAO;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
-import models.Students;
-import DAO.StudentsDAO;
-import views.TeacherView;
+import models.Teacher;
+import views.Dashboard;
 
 
 public class TeacherController {
-
-    private TeacherView view;
-    private List<Students> dataList = new ArrayList<>();
+    private Dashboard view;
+    private List<Teacher> dataList = new ArrayList<>();
     /**
-     * The Std.
+     * The Tc.
      */
-    StudentsDAO std = new StudentsDAO();
+    TeacherDAO tc = new TeacherDAO();
 
     /**
-     * Instantiates a new Teacher controller.
+     * Instantiates a new Tc controller.
      */
     public TeacherController() {
     }
 
     /**
-     * Instantiates a new Teacher controller.
+     * Instantiates a new Tc controller.
      *
      * @param view the view
      */
-    public TeacherController(TeacherView view) {
+    public TeacherController(Dashboard view) {
         this.view = view;
     }
 
@@ -43,7 +47,7 @@ public class TeacherController {
      * @return the max
      */
     public int getMax() {
-        int max = std.getMax();
+        int max = tc.getMax();
         return max;
     }
 
@@ -51,7 +55,7 @@ public class TeacherController {
      * Show new data.
      */
     public void showNewData() {
-        dataList = StudentsDAO.select();
+        dataList = TeacherDAO.select();
         showTable();
     }
 
@@ -59,108 +63,91 @@ public class TeacherController {
      * Show table.
      */
     public void showTable() {
-        DefaultTableModel tableModel = view.getTable();
+        DefaultTableModel tableModel = view.getTableTeacher();
         tableModel.setRowCount(0);
 
-        for (Students students : dataList) {
+        for (Teacher teacher : dataList) {
             tableModel.addRow(new Object[]{
-                students.getStudent_id(),
-                students.getFullname(),
-                students.getBirthday(),
-                students.getGender(),
-                students.getEmail(),
-                students.getPhoneNumber(),
-                students.getAddress(),
-                students.getImage_path()
+                teacher.getTeacher_id(),
+                teacher.getFullname(),
+                teacher.getGender(),
+                teacher.getEmail(),
+                teacher.getPhoneNumber()
             });
         }
     }
 
     /**
-     * Save student.
+     * Save teacher.
      */
-    public void saveStudent() {
+    public void saveTeacher() {
         String fullname = view.getFullName();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        String date = dateFormat.format(view.getBirthDate());
         String gender = view.getGender();
         String email = view.getEmail();
         String phoneNumber = view.getPhoneNumber();
-        String address = view.getAddress();
-        String image_path = view.getJLabelImagePath();
 
-        Students student = new Students();
-        student.setFullname(fullname);
-        student.setEmail(email);
-        student.setBirthday(date);
-        student.setPhoneNumber(phoneNumber);
-        student.setGender(gender);
-        student.setAddress(address);
-        student.setImage_path(image_path);
-
-        StudentsDAO.insert(student);
-        view.clearStudent();
+        Teacher teacher = new Teacher();
+        teacher.setFullname(fullname);
+        teacher.setEmail(email);
+        teacher.setPhoneNumber(phoneNumber);
+        teacher.setGender(gender);
+        
+        TeacherDAO.insert(teacher);
+        view.clearTeacher();
         showNewData();
     }
 
     /**
-     * Update student.
+     * Update teacher.
      */
-    public void updateStudent() {
-        int student_id = Integer.parseInt(view.getID());
-        if (std.isIDExits(student_id)) {
+    public void updateTeacher() {
+        int teacher_id = Integer.parseInt(view.getTeachID());
+        if (tc.isIDExits(teacher_id)) {
             if (!view.checkPhoneEmailUpdate()) {
                 String fullname = view.getFullName();
-                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                String date = dateFormat.format(view.getBirthDate());
                 String gender = view.getGender();
                 String email = view.getEmail();
                 String phoneNumber = view.getPhoneNumber();
-                String address = view.getAddress();
-                String image_path = view.getJLabelImagePath();
 
-                Students student = new Students();
-                student.setStudent_id(student_id);
-                student.setFullname(fullname);
-                student.setEmail(email);
-                student.setBirthday(date);
-                student.setPhoneNumber(phoneNumber);
-                student.setGender(gender);
-                student.setAddress(address);
-                student.setImage_path(image_path);
+                Teacher teacher = new Teacher();
+                teacher.setTeacher_id(teacher_id);
+                teacher.setFullname(fullname);
+                teacher.setEmail(email);
+                teacher.setPhoneNumber(phoneNumber);
+                teacher.setGender(gender);
 
-                StudentsDAO.update(student);
-                view.clearStudent();
+                TeacherDAO.update(teacher);
+                view.clearTeacher();
                 showNewData();
             }
         } else {
-            view.showMessage("Student id doesn't exists");
+            view.showMessage("Teacher id doesn't exists");
         }
     }
 
     /**
-     * Delete student.
+     * Delete teacher.
      */
-    public void deleteStudent() {
-        int student_id = Integer.parseInt(view.getID());
-        if (std.isIDExits(student_id)) {
-            int yesOrNo = view.showConfirmDeleteDialog("Course and score records will also be deleted", "Student Delete");
+    public void deleteTeacher() {
+        int teacher_id = Integer.parseInt(view.getTeachID());
+        if (tc.isIDExits(teacher_id)) {
+            int yesOrNo = view.showConfirmDeleteDialog("Teacher records will also be deleted", "Teacher Delete");
             if (yesOrNo == view.OK_Option()) {
-                StudentsDAO.delete(student_id);
+                TeacherDAO.delete(teacher_id);
             }
             showNewData();
-            view.clearStudent();
+            view.clearTeacher();
         } else {
-            view.showMessage("Student id doesn't exists");
+            view.showMessage("Teacher id doesn't exists");
         }
     }
 
     /**
-     * Search student.
+     * Search teacher.
      */
-    public void searchStudent() {
-        String searchTxt = view.getSearchField();
-        dataList = StudentsDAO.search(searchTxt);
+    public void searchTeacher() {
+        String searchTxt = view.getSearchTeacher();
+        dataList = TeacherDAO.search(searchTxt);
         showTable();
     }
 }

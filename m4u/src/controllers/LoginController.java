@@ -14,7 +14,6 @@ import views.Dashboard;
 import views.StudentView;
 import views.TeacherView;
 
-
 public class LoginController {
 
     private LoginView view;

@@ -21,7 +21,7 @@ public class ClassDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         String sql = "select max(class_id) from class";
         try {
             statement = conn.prepareStatement(sql);
@@ -42,7 +42,7 @@ public class ClassDAO extends ConnectSQL {
      * @param classes the classes
      */
     public static void insert(Classes classes) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "insert into class (class_id, class_name) values (?, ?)";
@@ -64,7 +64,7 @@ public class ClassDAO extends ConnectSQL {
     public static List<Classes> select() {
         List<Classes> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from class";
@@ -97,7 +97,7 @@ public class ClassDAO extends ConnectSQL {
     public static List<Classes> search(String searchValue) {
         List<Classes> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM class WHERE class_name LIKE ?";
@@ -127,7 +127,7 @@ public class ClassDAO extends ConnectSQL {
      * @param cl the cl
      */
     public static void update(Classes cl) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "update class set class_name = ?  where class_id = ?";
             statement = conn.prepareStatement(sql);
@@ -148,7 +148,7 @@ public class ClassDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIDExits(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from class where class_id = ?";
             statement = conn.prepareStatement(sql);
@@ -172,7 +172,7 @@ public class ClassDAO extends ConnectSQL {
      * @param id the id
      */
     public static void delete(int id) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "delete from class where class_id = ?";

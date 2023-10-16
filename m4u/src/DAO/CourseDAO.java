@@ -26,7 +26,7 @@ public class CourseDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         String sql = "select max(course_id) from course";
         try {
             statement = conn.prepareStatement(sql);
@@ -48,7 +48,7 @@ public class CourseDAO extends ConnectSQL {
      * @return the id
      */
     public boolean getID(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from student where student_id = ?";
             statement = conn.prepareStatement(sql);
@@ -76,7 +76,7 @@ public class CourseDAO extends ConnectSQL {
      */
     public int countSemester(int id) {
         int total = 0;
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT COUNT(DISTINCT semester_id) AS total FROM Course WHERE student_id = ?";
             statement = conn.prepareStatement(sql);
@@ -101,7 +101,7 @@ public class CourseDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isSemesterExists(int sid, int semesterNo) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from course where student_id = ? and semester_id = ?";
             statement = conn.prepareStatement(sql);
@@ -129,7 +129,7 @@ public class CourseDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isCourseExists(int course_id, String courseNo, String course) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from course where student_id = ? and " + courseNo + "= ?";
             statement = conn.prepareStatement(sql);
@@ -153,7 +153,7 @@ public class CourseDAO extends ConnectSQL {
      * @param cou the cou
      */
     public static void insert(Course cou) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "insert into course (student_id, semester_id, course1, course2, course3, course4, course5, teacher_id) values (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -181,7 +181,7 @@ public class CourseDAO extends ConnectSQL {
     public static List<Course> select() {
         List<Course> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "select * from course";
@@ -221,7 +221,7 @@ public class CourseDAO extends ConnectSQL {
     public static List<Course> search(String searchValue) {
         List<Course> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM course WHERE concat(student_id, course1, course2, course3, course4, course5) LIKE ?";

@@ -12,7 +12,6 @@ import DAO.ExamResultDAO;
 import views.StudentView;
 import views.TeacherView;
 
-
 public class ExamResultController {
 
     private TeacherView view;

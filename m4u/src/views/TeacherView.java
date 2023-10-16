@@ -4,12 +4,16 @@
  */
 package views;
 
+import DAO.StudentsDAO;
 import controllers.CourseController;
 import controllers.ExamResultController;
-import controllers.TeacherController;
-import static java.awt.Color.black;
-import static java.awt.Color.white;
-import java.awt.Image;
+import controllers.ScheduleController;
+import controllers.StudentController;
+
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.print.PrinterException;
 import java.io.File;
 import java.text.MessageFormat;
@@ -21,15 +25,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.table.DefaultTableModel;
-import DAO.StudentsDAO;
-import controllers.ScheduleController;
+
+import static java.awt.Color.black;
+import static java.awt.Color.white;
 
 
 public class TeacherView extends javax.swing.JFrame {
@@ -42,7 +40,7 @@ public class TeacherView extends javax.swing.JFrame {
     private DefaultTableModel model;
 
     public int currentIndex;
-    private final TeacherController tController;
+    private final StudentController tController;
     private final CourseController couController;
     private final ExamResultController exaController;
     private final ScheduleController schController;
@@ -56,7 +54,7 @@ public class TeacherView extends javax.swing.JFrame {
     public TeacherView() {
         this.setUndecorated(true);
         initComponents();
-        tController = new TeacherController(this);
+        tController = new StudentController(this);
         couController = new CourseController(this);
         exaController = new ExamResultController(this);
         schController = new ScheduleController(this);
@@ -3149,7 +3147,6 @@ public class TeacherView extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel2MousePressed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        // Tắt trang trí cửa sổ trước khi thay đổi độ mờ
 
         for (double i = 0.1; i <= 1.0; i += 0.1) {
             String s = i + "";

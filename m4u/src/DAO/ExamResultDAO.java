@@ -25,7 +25,7 @@ public class ExamResultDAO extends ConnectSQL {
      */
     public int getMax() {
         int id = 0;
-        open();
+        getJDBCConnection();
         try {
             String sql = "select max(result_id) from result";
             statement = conn.prepareStatement(sql);
@@ -48,7 +48,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @return the details
      */
     public boolean getDetails(int sid, int semesterNo) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from course where student_id = ? and semester_id = ?";
             statement = conn.prepareStatement(sql);
@@ -79,7 +79,7 @@ public class ExamResultDAO extends ConnectSQL {
      */
     public List<String> getCoursesByStudentAndSemester(int studentId, int semesterId) {
         List<String> courseNames = new ArrayList<>();
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT course1, course2, course3, course4, course5 FROM Course WHERE student_id = ? AND semester_id = ?";
             statement = conn.prepareStatement(sql);
@@ -109,7 +109,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIdExists(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT * FROM result WHERE result_id = ?";
             PreparedStatement statement = conn.prepareStatement(sql);
@@ -135,7 +135,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isCourseNameExist(String courseName) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT * FROM result WHERE course_name = ?";
             PreparedStatement statement = conn.prepareStatement(sql);
@@ -161,7 +161,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @return the boolean
      */
     public boolean isIdStudentExists(int id) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT * FROM student WHERE student_id = ?";
             PreparedStatement statement = conn.prepareStatement(sql);
@@ -186,7 +186,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @param exa the exa
      */
     public static void insert(ExamResult exa) {
-        open();
+        getJDBCConnection();
         try {
 
             String sql = "insert into result (student_id, course_name, semester_id, lt_point1, lt_point2, th_point1, th_point2, total_point1, total_point2) values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -215,7 +215,7 @@ public class ExamResultDAO extends ConnectSQL {
     public static List<ExamResult> select() {
         List<ExamResult> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
         try {
             String sql = "select * from result";
             statement = conn.prepareStatement(sql);
@@ -254,7 +254,7 @@ public class ExamResultDAO extends ConnectSQL {
     public static List<ExamResult> search(String searchValue) {
         List<ExamResult> dataList = new ArrayList<>();
 
-        open();
+        getJDBCConnection();
 
         try {
             String sql = "SELECT * FROM result WHERE concat(student_id, course_name) LIKE ?";
@@ -291,7 +291,7 @@ public class ExamResultDAO extends ConnectSQL {
      * @param exa the exa
      */
     public static void update(ExamResult exa) {
-        open();
+        getJDBCConnection();
         try {
             String sql = "UPDATE result SET student_id = ?, semester_id = ?, course_name = ?, lt_point1 = ?, th_point1 = ?, lt_point2 = ?, th_point2 = ?, total_point1 = ?, total_point2 = ? WHERE result_id = ?;";
             statement = conn.prepareStatement(sql);
@@ -322,7 +322,7 @@ public class ExamResultDAO extends ConnectSQL {
      */
     public static List<ExamResult> getScoreValue(int sid) {
         List<ExamResult> dataList = new ArrayList<>();
-        open();
+        getJDBCConnection();
         try {
             String sql = "SELECT student_id, semester_id, course_name, total_point1, total_point2 FROM result WHERE student_id = ?";
 

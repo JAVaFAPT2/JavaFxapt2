@@ -7,7 +7,7 @@ package views;
 import DAO.TeacherDAO;
 import controllers.ClassController;
 import controllers.LoginController;
-import controllers.TcController;
+import controllers.TeacherController;
 import static java.awt.Color.black;
 import static java.awt.Color.white;
 import java.awt.print.PrinterException;
@@ -27,7 +27,7 @@ public class Dashboard extends javax.swing.JFrame {
     private DefaultTableModel model;
 
     public int currentIndex;
-    private final TcController tcController;
+    private final TeacherController teacherController;
     private final ClassController clController;
     private final LoginController logController;
 
@@ -36,7 +36,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     public Dashboard() {
         initComponents();
-        tcController = new TcController(this);
+        teacherController = new TeacherController(this);
         clController = new ClassController(this);
         logController = new LoginController(this);
         init();
@@ -89,11 +89,11 @@ public class Dashboard extends javax.swing.JFrame {
         tableViewTeacher();
         tableViewClass();
         tableViewAccount();
-        txtTeachID.setText(String.valueOf(tcController.getMax()));
+        txtTeachID.setText(String.valueOf(teacherController.getMax()));
         txtClassID.setText(String.valueOf(clController.getMax()));
         txtAccID.setText(String.valueOf(logController.getMax()));
 
-        tcController.showNewData();
+        teacherController.showNewData();
         clController.showNewData();
         logController.showNewData();
     }
@@ -124,7 +124,7 @@ public class Dashboard extends javax.swing.JFrame {
 
 
     public void clearTeacher() {
-        txtTeachID.setText(String.valueOf(tcController.getMax()));
+        txtTeachID.setText(String.valueOf(teacherController.getMax()));
         txtTeachName.setText(null);
         boxTeachGen.setSelectedIndex(0);
         txtTeachEmail.setText(null);
@@ -1485,12 +1485,12 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        tcController.deleteTeacher();
+        teacherController.deleteTeacher();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         if (isEmptyTeacher()) {
-            tcController.updateTeacher();
+            teacherController.updateTeacher();
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -1498,7 +1498,7 @@ public class Dashboard extends javax.swing.JFrame {
         if (isEmptyTeacher()) {
             if (!tea.isEmailExits(getEmail())) {
                 if (!tea.isPhoneExits(getPhoneNumber())) {
-                    tcController.saveTeacher();
+                    teacherController.saveTeacher();
                 } else {
                     showMessage("This is phone already exists");
                 }
@@ -1525,14 +1525,14 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
         searchTeacher.setText(null);
-        tcController.showNewData();
+        teacherController.showNewData();
     }//GEN-LAST:event_btnRefreshActionPerformed
 
     private void btnSearchTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchTeacherActionPerformed
         if (searchTeacher.getText().isEmpty()) {
             showMessage("Please enter student id or course name!");
         } else {
-            tcController.searchTeacher();
+            teacherController.searchTeacher();
         }
     }//GEN-LAST:event_btnSearchTeacherActionPerformed
 
