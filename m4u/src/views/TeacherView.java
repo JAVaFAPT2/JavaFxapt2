@@ -14,9 +14,7 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.print.PrinterException;
 import java.io.File;
-import java.text.MessageFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -87,9 +85,9 @@ public class TeacherView extends javax.swing.JFrame {
     }
 
 
-    public JTable getJTable1() {
-        return jTable1;
-    }
+//    public JTable getJTable1() {
+//        return jTable1;
+//    }
 
     private void showNewData() {
         tController.showNewData();
@@ -162,7 +160,7 @@ public class TeacherView extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+//       jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -201,7 +199,7 @@ public class TeacherView extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jPanel21 = new javax.swing.JPanel();
         jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+//      jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
@@ -240,7 +238,7 @@ public class TeacherView extends javax.swing.JFrame {
         jTable5 = new javax.swing.JTable();
         jPanel42 = new javax.swing.JPanel();
         jButton38 = new javax.swing.JButton();
-        jButton39 = new javax.swing.JButton();
+//      jButton39 = new javax.swing.JButton();
         jButton40 = new javax.swing.JButton();
         jButton41 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
@@ -263,7 +261,7 @@ public class TeacherView extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         jPanel37 = new javax.swing.JPanel();
-        jButton34 = new javax.swing.JButton();
+//        jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
         jPanel25 = new javax.swing.JPanel();
@@ -295,7 +293,7 @@ public class TeacherView extends javax.swing.JFrame {
         jButton20 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
+//        jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
 
@@ -652,14 +650,14 @@ public class TeacherView extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton7.setText("Print");
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
+//        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+//        jButton7.setText("Print");
+//        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//        jButton7.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                jButton7ActionPerformed(evt);
+//            }
+//        });
 
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton8.setText("Clear");
@@ -691,8 +689,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -705,7 +701,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1076,14 +1071,14 @@ public class TeacherView extends javax.swing.JFrame {
             }
         });
 
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton14.setText("Print");
-        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
+//        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+//        jButton14.setText("Print");
+//        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//        jButton14.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                jButton14ActionPerformed(evt);
+//            }
+//        });
 
         jButton15.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton15.setText("Clear");
@@ -1111,8 +1106,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1123,7 +1116,6 @@ public class TeacherView extends javax.swing.JFrame {
             .addGroup(jPanel21Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1524,14 +1516,14 @@ public class TeacherView extends javax.swing.JFrame {
             }
         });
 
-        jButton39.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton39.setText("Print");
-        jButton39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton39ActionPerformed(evt);
-            }
-        });
+//        jButton39.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+//        jButton39.setText("Print");
+//        jButton39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//        jButton39.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                jButton39ActionPerformed(evt);
+//            }
+//        });
 
         jButton40.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton40.setText("Clear");
@@ -1570,8 +1562,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1582,7 +1572,6 @@ public class TeacherView extends javax.swing.JFrame {
             .addGroup(jPanel42Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1845,14 +1834,14 @@ public class TeacherView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton34.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton34.setText("Print");
-        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton34ActionPerformed(evt);
-            }
-        });
+//        jButton34.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+//        jButton34.setText("Print");
+//        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//        jButton34.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                jButton34ActionPerformed(evt);
+//            }
+//        });
 
         jButton35.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton35.setText("Clear");
@@ -1878,8 +1867,6 @@ public class TeacherView extends javax.swing.JFrame {
             jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel37Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1890,7 +1877,6 @@ public class TeacherView extends javax.swing.JFrame {
             .addGroup(jPanel37Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
@@ -2212,14 +2198,14 @@ public class TeacherView extends javax.swing.JFrame {
             }
         });
 
-        jButton23.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jButton23.setText("Print");
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
-            }
-        });
+//        jButton23.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+//        jButton23.setText("Print");
+//        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//        jButton23.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                jButton23ActionPerformed(evt);
+//            }
+//        });
 
         jButton24.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton24.setText("Clear");
@@ -2251,8 +2237,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2265,7 +2249,6 @@ public class TeacherView extends javax.swing.JFrame {
                 .addGroup(jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -3244,15 +3227,15 @@ public class TeacherView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("Student Information");
-            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
-            jTable1.print(JTable.PrintMode.FIT_WIDTH, header, footer);
-        } catch (PrinterException ex) {
-            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton7ActionPerformed
+//    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+//        try {
+//            MessageFormat header = new MessageFormat("Student Information");
+//            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
+//            jTable1.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+//        } catch (PrinterException ex) {
+//            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -3280,15 +3263,15 @@ public class TeacherView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("Student Information");
-            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
-            jTable2.print(JTable.PrintMode.FIT_WIDTH, header, footer);
-        } catch (PrinterException ex) {
-            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton14ActionPerformed
+//    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+//        try {
+//            MessageFormat header = new MessageFormat("Student Information");
+//            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
+//            jTable2.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+//        } catch (PrinterException ex) {
+//            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jTextField25KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField25KeyTyped
         // TODO add your handling code here:
@@ -3307,15 +3290,15 @@ public class TeacherView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton40ActionPerformed
 
 
-    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("Student Table Score");
-            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
-            jTable5.print(JTable.PrintMode.FIT_WIDTH, header, footer);
-        } catch (PrinterException ex) {
-            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton39ActionPerformed
+//    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+//        try {
+//            MessageFormat header = new MessageFormat("Student Table Score");
+//            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
+//            jTable5.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+//        } catch (PrinterException ex) {
+//            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         if (jTextField26.getText().isEmpty()) {
@@ -3453,15 +3436,15 @@ public class TeacherView extends javax.swing.JFrame {
         schController.deleteSchedule();
     }//GEN-LAST:event_jButton22ActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("Schedule");
-            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
-            jTable3.print(JTable.PrintMode.FIT_WIDTH, header, footer);
-        } catch (PrinterException ex) {
-            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton23ActionPerformed
+//    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+//        try {
+//            MessageFormat header = new MessageFormat("Schedule");
+//            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
+//            jTable3.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+//        } catch (PrinterException ex) {
+//            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         clearSchedule();
@@ -3478,15 +3461,15 @@ public class TeacherView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_searchGPAActionPerformed
 
-    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("Marks Sheet   Student ID" + searchGPA.getText() + "   " + cgpaLabel.getText());
-            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
-            jTable4.print(JTable.PrintMode.FIT_WIDTH, header, footer);
-        } catch (PrinterException ex) {
-            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButton34ActionPerformed
+//    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+//        try {
+//            MessageFormat header = new MessageFormat("Marks Sheet   Student ID" + searchGPA.getText() + "   " + cgpaLabel.getText());
+//            MessageFormat footer = new MessageFormat("Page{0,number,integer}");
+//            jTable4.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+//        } catch (PrinterException ex) {
+//            Logger.getLogger(TeacherView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }//GEN-LAST:event_jButton34ActionPerformed
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
         if (searchGPA.getText().isEmpty()) {
@@ -3543,7 +3526,7 @@ public class TeacherView extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
+//    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -3552,23 +3535,23 @@ public class TeacherView extends javax.swing.JFrame {
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
+//    private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton34;
+//    private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
+//    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton40;
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+//    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
